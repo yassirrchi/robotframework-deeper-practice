@@ -3,9 +3,10 @@ Library    SeleniumLibrary
 *** Variables ***
 ${url}  https://rahulshettyacademy.com/AutomationPractice/
 *** Test Cases ***
-tESTUUNG
+testselect
     open browser    ${url}  chrome
-    set selenium speed      2seconds
-    select radio button    radioButton  radio2
-    select checkbox    checkBoxOption2
+    select from list by label    dropdown-class-example     Option2
+    sleep   1
+    select from list by index    dropdown-class-example     1
+
 *** Keywords ***
